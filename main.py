@@ -33,14 +33,6 @@ async def users():
 
         conn.close()
 
-        #mydict = create_dict()
-        #i=1
-        #for row in result:
-        #    mydict.add(str(i),({"Host":row[0],"User":row[1]}))
-        #    i+=1
-
-        #stud_json = json.dumps(mydict, indent=2, sort_keys=True)
-
         return json.dumps(result, indent=2)
     
     except mariadb.Error as e:
