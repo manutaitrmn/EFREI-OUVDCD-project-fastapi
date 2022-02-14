@@ -6,6 +6,4 @@ COPY . /code
 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-EXPOSE 80
-
 CMD ["hypercorn", "main:app", "--bind", "0.0.0.0:80"]
