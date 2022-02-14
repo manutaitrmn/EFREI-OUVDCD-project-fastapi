@@ -4,7 +4,6 @@ import json
 
 app = FastAPI()
 
-
 class create_dict(dict):
     def __init__(self):
         self = dict()
